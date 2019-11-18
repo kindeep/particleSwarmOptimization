@@ -59,7 +59,8 @@ for i in range(5):
 
     random_best = float("inf")
 
-    for _ in range(NUM_ITER):
+    # Random search
+    for _ in range(NUM_ITER * 30):
         random_best = min(rast_func(np.random.uniform(-5.12, 5.12, TEST_DIM)),
                           random_best)
 
